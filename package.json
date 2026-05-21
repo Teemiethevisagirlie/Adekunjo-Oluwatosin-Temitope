@@ -1,0 +1,17 @@
+{
+  "name": "teemie-visa-girlie",
+  "version": "1.0.0",
+  "description": "Teemie The Visa Girlie — Travel consultant portfolio site with admin dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["travel", "visa", "portfolio", "node"],
+  "author": "Teemie The Visa Girlie",
+  "license": "UNLICENSED",
+  "dependencies": {}
+}
