@@ -42,7 +42,7 @@ const DEFAULT_CONTENT = {
     cta_primary: 'Book a Consultation',
     cta_secondary: 'Explore Services',
   },
-  stats: { years: '3+', clients: '100+', services: '6+', success: '90%' },
+  stats: { years: '3+', clients: '100+', services: '6+', success: '98%' },
   about: {
     title: 'The story behind the visa girlie',
     body: "Hi, I'm <strong>Teemie</strong> — a Travel Consultant and Project Manager with <em>3 years</em> in the travel industry. I've helped hundreds of people plan their travels, relocate through study abroad, reunite families through family relocation, and experience unforgettable vacations across the globe.<br><br>I studied <strong>Accounting</strong> but pivoted when my own study abroad experience didn't go as planned. That personal challenge sparked a mission — to make sure no one else goes through the same. In <em>3 years</em>, I've turned that mission into a thriving consultancy.",
@@ -250,14 +250,6 @@ if(ham)ham.addEventListener('click',()=>nav.classList.toggle('open'));
 
 function homePage() {
   const c = CONTENT;
-  const servicesHTML = c.services.map((s,i)=>`
-    <div class="service-card reveal reveal-delay-${i+1}" style="--ca:${s.accent}">
-      <span class="srv-num">0${i+1}</span>
-      <span class="srv-emoji">${s.emoji}</span>
-      <div class="srv-name">${s.name}</div>
-      <div class="srv-desc">${s.desc}</div>
-    </div>`).join('');
-
   const body = `
 <style>
 .hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8rem 2rem 5rem;text-align:center;position:relative;overflow:hidden;}
@@ -322,13 +314,6 @@ function homePage() {
 
 <div class="marquee-wrapper">
   <div class="marquee-track" id="marqueeTrack"></div>
-</div>
-
-<div class="home-services">
-  <p class="section-label reveal">What I offer</p>
-  <h2 class="section-title reveal">Services built for every kind of traveller</h2>
-  <p class="section-subtitle reveal">Whether you're moving abroad, studying internationally, or just need a stress-free travel experience.</p>
-  <div class="srv-grid">${servicesHTML}</div>
 </div>
 
 <div class="quote-section reveal">
