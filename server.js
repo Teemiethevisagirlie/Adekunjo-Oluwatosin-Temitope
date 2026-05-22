@@ -42,7 +42,7 @@ const DEFAULT_CONTENT = {
     cta_primary: 'Book a Consultation',
     cta_secondary: 'Explore Services',
   },
-  stats: { years: '3+', clients: '100+', services: '6+', success: '98%' },
+  stats: { years: '3+', clients: '100+', services: '6+', success: '90%' },
   about: {
     title: 'The story behind the visa girlie',
     body: "Hi, I'm <strong>Teemie</strong> — a Travel Consultant and Project Manager with <em>3 years</em> in the travel industry. I've helped hundreds of people plan their travels, relocate through study abroad, reunite families through family relocation, and experience unforgettable vacations across the globe.<br><br>I studied <strong>Accounting</strong> but pivoted when my own study abroad experience didn't go as planned. That personal challenge sparked a mission — to make sure no one else goes through the same. In <em>3 years</em>, I've turned that mission into a thriving consultancy.",
